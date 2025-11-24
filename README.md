@@ -20,3 +20,10 @@ no web-server required)
 * make tap - creates the tap file
 * make run - runs the game
 * make all - all of the above
+
+## License
+
+The source code and assets are licensed under Creative Commons [CC BY](https://creativecommons.org/licenses/by/4.0/).
+
+The tools/libraries included that I don't own have their own copyright notices
+and license (some are public domain, others are open source).

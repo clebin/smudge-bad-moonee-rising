@@ -1,0 +1,360 @@
+{
+    "settings": {
+        "create-assets-list": true,
+        "naming": "camelcase",
+        "output-folder": "./assets",
+        "object-types": "raw-assets/objects/objecttypes.xml"
+    },
+    "tilemaps": [
+    {
+        "name": "screen-object-maps",
+        "map": "raw-assets/screens/screens.tmj",
+        "output-folder": "./assets/screens",
+        "format": "asm",
+        "layer-types": "objectgroup",
+        "add-dimensions": false
+    },
+    {
+        "name": "menu-title-tilemap",
+        "map": "raw-assets/interface/menu-title.tmj",
+        "output-folder": "./assets/interface",
+        "use-layer-names": false,
+        "format": "asm"
+    },
+    {
+        "name": "status-bar-tilemap",
+        "map": "raw-assets/interface/status-bar.tmj",
+        "output-folder": "./assets/interface",
+        "use-layer-names": false,
+        "format": "asm"
+    },
+    {
+        "name": "title-bar-tilemap",
+        "map": "raw-assets/interface/title-bar.tmj",
+        "output-folder": "./assets/interface",
+        "use-layer-names": false,
+        "add-dimensions": true,
+        "format": "asm"
+    },
+    {
+        "name": "laundrette-tilemap",
+        "map": "raw-assets/objects/laundrette.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "brick-house-tilemap",
+        "map": "raw-assets/objects/brick-house.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "victorian-house-tilemap",
+        "map": "raw-assets/objects/victorian-house.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "rural-house-1-tilemap",
+        "map": "raw-assets/objects/rural-house-1.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "rundown-house-1-tilemap",
+        "map": "raw-assets/objects/rundown-house-1.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "rundown-house-2-tilemap",
+        "map": "raw-assets/objects/rundown-house-2.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "posh-house-tilemap",
+        "map": "raw-assets/objects/posh-house.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "factory-tilemap",
+        "map": "raw-assets/objects/factory.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "castle-tilemap",
+        "map": "raw-assets/objects/castle.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "buck-house-tilemap",
+        "map": "raw-assets/objects/buck-house.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "road-1-tilemap",
+        "map": "raw-assets/objects/road-1.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true,
+        "compression": "rle"
+    },
+    {
+        "name": "road-2-tilemap",
+        "map": "raw-assets/objects/road-2.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true,
+        "compression": "rle"
+    },
+    {
+        "name": "road-3-tilemap",
+        "map": "raw-assets/objects/road-3.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true,
+        "compression": "rle"
+    },
+    {
+        "name": "phone-box-tilemap",
+        "map": "raw-assets/objects/phone-box.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "tree-1-tilemap",
+        "map": "raw-assets/objects/tree-1.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "bush-1-tilemap",
+        "map": "raw-assets/objects/bush-1.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "bush-2-tilemap",
+        "map": "raw-assets/objects/bush-2.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "bush-3-tilemap",
+        "map": "raw-assets/objects/bush-3.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "shop-1-tilemap",
+        "map": "raw-assets/objects/shop-1.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "shop-2-tilemap",
+        "map": "raw-assets/objects/shop-2.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "pub-tilemap",
+        "map": "raw-assets/objects/pub.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "pub-sign-1-tilemap",
+        "map": "raw-assets/objects/pub-sign-1.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "pub-sign-2-tilemap",
+        "map": "raw-assets/objects/pub-sign-2.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "sign-tilemap",
+        "map": "raw-assets/objects/sign.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "town-cross-tilemap",
+        "map": "raw-assets/objects/town-cross.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "pavement-tilemap",
+        "map": "raw-assets/objects/pavement.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    },
+    {
+        "name": "streetlamp-tilemap",
+        "map": "raw-assets/objects/streetlamp.tmj",
+        "output-folder": "./assets/objects",
+        "use-layer-names": false,
+        "format": "asm",
+        "add-dimensions": true
+    }],
+    "sprites": [
+        {
+            "name": "player-sprite",
+            "input": "raw-assets/sprites/smudge.gif",
+            "mask": "raw-assets/sprites/smudge-mask.gif",
+            "paper-colour": "white",
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "player-bike",
+            "input": "raw-assets/sprites/smudge-cycling.gif",
+            "mask": "raw-assets/sprites/smudge-cycling-mask.gif",
+            "add-to-assets-list": false,
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "saucer-sprite",
+            "input": "raw-assets/sprites/flying-saucer.gif",
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "brush-sprite",
+            "input": "raw-assets/sprites/brush.gif",
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "van-sprite",
+            "input": "raw-assets/sprites/van.gif",
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "cloud-sprite",
+            "input": "raw-assets/sprites/cloud.gif",
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "ball-sprite",
+            "input": "raw-assets/sprites/ball-small.gif",
+            "mask": "raw-assets/sprites/ball-small-mask.gif",
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "bubble-sprite",
+            "input": "raw-assets/sprites/bubble.gif",
+            "mask": "raw-assets/sprites/bubble-mask.gif",
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "wasp-sprite",
+            "input": "raw-assets/sprites/wasp.gif",
+            "output-folder": "./assets/sprites",
+            "add-to-assets-list": false
+        },
+        {
+            "name": "moon-small-sprite",
+            "input": "raw-assets/sprites/moon-small.gif",
+            "output-folder": "./assets/sprites",
+            "add-to-assets-list": false
+        },
+        {
+            "name": "face-sprite",
+            "input": "raw-assets/sprites/face.gif",
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "face-2-sprite",
+            "input": "raw-assets/sprites/face2.gif",
+            "output-folder": "./assets/sprites"
+        },
+        {
+            "name": "saucer-small-sprite",
+            "input": "raw-assets/sprites/saucer-small.gif",
+            "output-folder": "./assets/sprites",
+            "add-to-assets-list": false
+        },
+        {
+            "name": "ghost-small-sprite",
+            "input": "raw-assets/sprites/ghost-small.gif",
+            "output-folder": "./assets/sprites",
+            "add-to-assets-list": false
+        }
+    ],
+    "tilesets": [
+        {
+            "name": "tiles",
+            "tileset": "raw-assets/tileset/tileset.tsj",
+            "output-folder": "./assets/screens",
+            "replace-flash-with-solid": true
+        }
+    ],
+    "graphics": [
+        {
+            "name": "tiles-graphics",
+            "input": "raw-assets/tileset/tiles-bw.gif",
+            "output-folder": "./assets/screens"
+        },
+        {
+            "name": "font-graphics",
+            "input": "raw-assets/interface/font.gif",
+            "output-folder": "./assets/interface"
+        }
+    ]
+}

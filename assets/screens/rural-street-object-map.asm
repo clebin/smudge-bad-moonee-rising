@@ -1,8 +1,0 @@
-SECTION rodata_user
-
-PUBLIC _ruralStreetObjectMap
-
-._ruralStreetObjectMap
-defb @00001001, @00001110, @00000110, @00000001
-defb @00001110, @00000110, @00010101, @00000011
-defb @00001011, @00010010

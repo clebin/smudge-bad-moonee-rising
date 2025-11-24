@@ -1,4 +1,4 @@
-void gameOver()
+void gameOver(void)
 {
     zx_border(0);
     

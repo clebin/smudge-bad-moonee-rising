@@ -1,9 +1,0 @@
-SECTION rodata_user
-
-PUBLIC _laundretteObjectMap
-
-._laundretteObjectMap
-defb @00001100, @00001000, @00000101, @00001011
-defb @00001111, @00000101, @00010110, @00010100
-defb @00000000, @00000000, @00011100, @00010001
-defb @00001100

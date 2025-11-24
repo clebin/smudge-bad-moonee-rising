@@ -1,6 +1,6 @@
 
 // initialise enemies for new level
-void initialiseEnemies()
+void initialiseEnemies(void)
 {
     for(i=0;i<NUM_ENEMIES;i++) {
         initialiseEnemy(i, levelEnemies[i]);
@@ -67,7 +67,7 @@ void initialiseEnemy(uint8_t num, uint8_t enemyType)
     }
 }
 
-void resetEnemies()
+void resetEnemies(void)
 {
     for(i=0;i<levelNumEnemies;i++) {
         moveSpriteOffScreen(enemies[i].sp);
@@ -81,7 +81,7 @@ void setEnemyColour(uint8_t num)
     changeSpriteColour(enemies[num].sp, 65+(rand()%6));
 }
 
-void updateEnemies() {
+void updateEnemies(void) {
 
     if( screenNum == SCREEN_NUM_LAUNDRETTE || 
         screenNum == SCREEN_NUM_LAUNDRETTE ) {

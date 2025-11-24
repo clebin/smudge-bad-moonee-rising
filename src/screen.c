@@ -111,7 +111,7 @@ void processObjectMap(uint8_t mapNum)
 }
 
 // place barrier if necessary
-void drawBarrier()
+void drawBarrier(void)
 {
     if (screenNum != SCREEN_NUM_BUCK_HOUSE && screenNum != SCREEN_NUM_LAUNDRETTE &&
         levelScreenIndex > levelScreensCompleted)
@@ -133,7 +133,7 @@ void drawBarrier()
     }
 }
 
-void drawCones()
+void drawCones(void)
 {
     // place cones if necessary
     if (screenNum != SCREEN_NUM_BUCK_HOUSE &&
@@ -146,7 +146,7 @@ void drawCones()
     }
 }
 
-void drawBackground()
+void drawBackground(void)
 {
     uint16_t tileNum;
 

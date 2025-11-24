@@ -1,9 +1,0 @@
-SECTION rodata_user
-
-PUBLIC _highStreetObjectMap
-
-._highStreetObjectMap
-defb @00001100, @00010010, @00000100, @00000000
-defb @00001001, @00001101, @00001011, @00010011
-defb @00000100, @00010100, @00001111, @00000101
-defb @00010010

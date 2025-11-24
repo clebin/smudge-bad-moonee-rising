@@ -1,0 +1,33 @@
++-------------+
+|0xFFFF  65535|
+|             | User Defined Graphics
+|0xFF58  65368| <-- SP
+|-------------|
+|0xFF58  65367| Z88DK program's stack
+| (512 bytes) | Grows downwards, remember!
+|0xFD57  64855|
+|-------------|
+|0xFD56  64854|
+|             |
+|             | Z88DK heap memory
+|             |
+|             |
+|-------------|
+|             | Z88DK BSS section  (CRT_ORG_BSS)
+|             | Z88DK DATA section (CRT_ORG_DATA)
+|-------------| ^^^
+|             |
+|0x8000  32768| Z88DK compiled C   (CRT_ORG_CODE)
+|-------------|
+|             | Lower RAM, includes basic program,
+|             | sys vars, print buffer, etc.
+|             | Slower, "contended memory"
+|-------------|
+|0x5AFF  23295|
+|             | Display File (i.e. screen memory)
+|0x4000  16384|
+|-------------|
+|0x3FFF  16383|
+|             | ROM
+|0x0000      0|
++-------------+

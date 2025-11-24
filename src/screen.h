@@ -37,36 +37,36 @@
 #define SCREEN_NUM_BUCK_HOUSE 13
 
 // screen object maps
-extern unsigned char laundretteObjectMap[];
-extern unsigned char brickStreetObjectMap[];
-extern unsigned char victorianStreetObjectMap[];
-extern unsigned char ruralStreetObjectMap[];
-extern unsigned char factoryObjectMap[];
-extern unsigned char castleObjectMap[];
-extern unsigned char poshStreetObjectMap[];
-extern unsigned char deadEndStreetObjectMap[];
-extern unsigned char highStreetObjectMap[];
-extern unsigned char castleCornerObjectMap[];
-extern unsigned char cornerShopObjectMap[];
-extern unsigned char ruralStreet2ObjectMap[];
-extern unsigned char townSquareObjectMap[];
-extern unsigned char buckHouseObjectMap[];
+extern unsigned char laundretteObjects[];
+extern unsigned char brickStreetObjects[];
+extern unsigned char victorianStreetObjects[];
+extern unsigned char ruralStreetObjects[];
+extern unsigned char factoryObjects[];
+extern unsigned char castleObjects[];
+extern unsigned char poshStreetObjects[];
+extern unsigned char deadEndStreetObjects[];
+extern unsigned char highStreetObjects[];
+extern unsigned char castleCornerObjects[];
+extern unsigned char cornerShopObjects[];
+extern unsigned char ruralStreet2Objects[];
+extern unsigned char townSquareObjects[];
+extern unsigned char buckHouseObjects[];
 
 const unsigned char *ScreenMaps[NUM_SCREENS] = {
-    laundretteObjectMap,
-    brickStreetObjectMap,
-    victorianStreetObjectMap, 
-    ruralStreetObjectMap,
-    factoryObjectMap,
-    castleObjectMap,
-    poshStreetObjectMap,
-    deadEndStreetObjectMap,
-    highStreetObjectMap,
-    castleCornerObjectMap,
-    cornerShopObjectMap,
-    ruralStreet2ObjectMap,
-    townSquareObjectMap,
-    buckHouseObjectMap,
+    laundretteObjects,
+    brickStreetObjects,
+    victorianStreetObjects, 
+    ruralStreetObjects,
+    factoryObjects,
+    castleObjects,
+    poshStreetObjects,
+    deadEndStreetObjects,
+    highStreetObjects,
+    castleCornerObjects,
+    cornerShopObjects,
+    ruralStreet2Objects,
+    townSquareObjects,
+    buckHouseObjects,
 };
 
 // object tilemaps
@@ -137,7 +137,7 @@ int8_t chimneySwept[NUM_SCREENS];
 
 // get tileset
 extern unsigned char tilesGraphics[];
-extern unsigned char tilesTilesetColours[];
+extern unsigned char tilesColours[];
 
 unsigned char tiles[256];
 

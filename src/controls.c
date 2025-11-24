@@ -1,5 +1,5 @@
 
-void readControls()
+void readControls(void)
 {
     if( in_key_pressed(IN_KEY_SCANCODE_g)) {
         if( mode == MODE_PAUSED ) {

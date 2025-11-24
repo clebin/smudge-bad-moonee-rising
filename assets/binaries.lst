@@ -7,12 +7,10 @@ sprites/ball-sprite
 sprites/bubble-sprite
 sprites/face-sprite
 sprites/face-2-sprite
-
 interface/font-graphics
 interface/status-bar-tilemap
 interface/menu-title-tilemap
 interface/title-bar-tilemap
-
 screens/tiles-tileset
 screens/tiles-graphics
 screens/laundrette-object-map
@@ -29,7 +27,6 @@ screens/corner-shop-object-map
 screens/rural-street-2-object-map
 screens/town-square-object-map
 screens/buck-house-object-map
-
 objects/buck-house-tilemap
 objects/brick-house-tilemap
 objects/bush-1-tilemap

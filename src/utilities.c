@@ -108,7 +108,7 @@ uint8_t spriteTestEdge(uint8_t testcol, uint8_t testrow, uint8_t length, uint8_t
 }
 
 // TODO: find out the best way of doing this
-void clearScreen()
+void clearScreen(void)
 {
     for (y = 0; y < 24; y++)
     {
@@ -153,7 +153,7 @@ void initialiseColour(uint16_t count, struct sp1_cs *c)
 
 void printTile(uint8_t row, uint8_t col, uint8_t num)
 {
-    sp1_PrintAtInv(row, col, tilesTilesetColours[num] & 0x7F, (uint16_t)&tilesGraphics[num * 8]);
+    sp1_PrintAtInv(row, col, tilesColours[num] & 0x7F, (uint16_t)&tilesGraphics[num * 8]);
 }
 
 void moveSpriteOffScreen(struct sp1_ss *sp)
@@ -179,7 +179,7 @@ void changeFrameNext(struct sp1_ss *sp, uint8_t framelength, uint8_t framefirst,
     }
 }
 
-void waitForFireButton()
+void waitForFireButton(void)
 {
     // wait for fire button
     while (1)
@@ -307,7 +307,7 @@ void addCompressedTilemap(uint8_t index, uint8_t row, uint8_t col)
 //             sp1_PrintAtInv(
 //                 n+b,
 //                 i+a,
-//                 tilesTilesetColours[13],
+//                 tilesColours[13],
 //                 (uint16_t) &tilesGraphics[5]
 //             );
 //         }
@@ -316,7 +316,7 @@ void addCompressedTilemap(uint8_t index, uint8_t row, uint8_t col)
 //     sp1_PrintAtInv(
 //         n,
 //         i,
-//         tilesTilesetColours[12],
+//         tilesColours[12],
 //         (uint16_t) &tilesGraphics[5]
 //     );
 // }

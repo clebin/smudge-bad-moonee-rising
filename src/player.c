@@ -1,11 +1,11 @@
 
-void initialisePlayer()
+void initialisePlayer(void)
 {
     player.sp = getNewMaskedSprite((int *) playerSprite, 2, 3);
     // player.spBike = getNewMaskedSprite((int *) playerBikeSprite, 4, 3);
 }
 
-void resetPlayer()
+void resetPlayer(void)
 {
     numLives = START_NUM_LIVES;
     player.sp->frame = 0;
@@ -14,7 +14,7 @@ void resetPlayer()
     resetPlayerPosition();
 }
 
-void resetPlayerPosition()
+void resetPlayerPosition(void)
 {
     player.y = PLAYER_START_Y;
     player.x = PLAYER_START_X;
@@ -28,7 +28,7 @@ void resetPlayerPosition()
     sp1_MoveSprAbs(player.sp, &full_screen, (void*) player.sp->frame, player.y, player.x, 0, 0);
 }
 
-void updatePlayer()
+void updatePlayer(void)
 {
     player.col = getColForX(player.x);
     player.row = getRowForY(player.y);
@@ -63,14 +63,14 @@ void updatePlayer()
     }
 }
 
-void crashedJetpack()
+void crashedJetpack(void)
 {
     playerPower -= PENALTY_CRASH_JETPACK;
     zx_border(INK_BLUE);
     bit_beepfx_di(BEEPFX_HIT_3);   
 }
 
-void updatePlayerWalking()
+void updatePlayerWalking(void)
 {
     // moving left
     if( player.deltax == -1 ) {
@@ -112,12 +112,12 @@ void updatePlayerWalking()
     drawPlayer();
 }
 
-void drawPlayer()
+void drawPlayer(void)
 {
     sp1_MoveSprPix(player.sp, &full_screen, (void*) 0, player.x, player.y);
 }
 
-void updatePlayerJetpack()
+void updatePlayerJetpack(void)
 {
     if( player.deltax == -1 ) {
         changeFrame(player.sp, PLAYER_FRAME_LENGTH, PLAYER_FRAME_JETPACK_L);
@@ -130,7 +130,7 @@ void updatePlayerJetpack()
     // draw
     drawPlayer();
 }
-void playerChangeStateJetpack()
+void playerChangeStateJetpack(void)
 {
     player.state = PLAYER_STATE_JETPACK;
     player.y = PLAYER_STATE_SWITCH_Y-24;
@@ -142,7 +142,7 @@ void playerChangeStateJetpack()
     }
 }
 
-void playerChangeStateWalking()
+void playerChangeStateWalking(void)
 {    
     player.state = PLAYER_STATE_WALKING;
     player.y = PLAYER_STATE_SWITCH_Y;
@@ -156,7 +156,7 @@ void playerChangeStateWalking()
     sp1_MoveSprAbs(player.sp, &full_screen, 0, player.y, SCREEN_WIDTH+1, 0, 0);
 }
 
-void playerMoveUp()
+void playerMoveUp(void)
 {
     y = player.y - PLAYER_SPEEDY;
     row = getRowForY(y);
@@ -189,7 +189,7 @@ void playerMoveUp()
     }
 }
 
-void playerMoveDown()
+void playerMoveDown(void)
 {
     y = player.y + PLAYER_SPEEDY;
     row = getRowForY(y);
@@ -266,7 +266,7 @@ void playerMoveHorizontal(int8_t delta)
     }
 }
 
-void playerNoMoveY()
+void playerNoMoveY(void)
 {
     player.deltay = 0;
 

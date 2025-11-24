@@ -27,7 +27,7 @@ uint8_t isTileSolid(int testcol, int testrow)
     }
 
     uint16_t tileNum = currentScreen[(testrow * PLAYAREA_COLS) + testcol];
-    return (uint8_t) ((tilesTilesetColours[tileNum] & 0x80) >> 7);
+    return (uint8_t) ((tilesColours[tileNum] & 0x80) >> 7);
 }
 
 // uint8_t isTileLethal(uint8_t testcol, uint8_t testrow)

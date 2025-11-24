@@ -1,5 +1,5 @@
 
-void mainMenu()
+void mainMenu(void)
 {
     sp1_Invalidate(&full_screen);
 
@@ -56,7 +56,7 @@ void selectControls(uint8_t num)
     showControls();
 }
 
-void showTitle()
+void showTitle(void)
 {
     count = 0;
     x = TITLE_X;
@@ -74,7 +74,7 @@ void showTitle()
     }
 }
 
-void showControls()
+void showControls(void)
 {
     uint8_t colour;
     

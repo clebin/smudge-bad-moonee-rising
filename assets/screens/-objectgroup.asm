@@ -1,8 +1,0 @@
-SECTION rodata_user
-
-PUBLIC _objectgroup
-
-._objectgroup
-defb @00001010, @00000101, @00000001, @00000100
-defb @00010101, @00000110, @00000000, @00001001
-defb @00010011, @00001001, @00001000

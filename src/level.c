@@ -1,4 +1,4 @@
-void initialiseLevels()
+void initialiseLevels(void)
 {
     strcpy(levels[0].name, "CURRAHNATION STREET");
     strcpy(levels[1].name, "PI-CADILLY CIRCUS");

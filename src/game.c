@@ -10,7 +10,7 @@
 #include "level.c"
 #include "game-over.c"
 
-int main()
+int main(void)
 {
     // initialise sp1_engine
     sp1_Initialize(
@@ -77,7 +77,7 @@ int main()
     }
 }
 
-void startNewGame()
+void startNewGame(void)
 {
     mode = MODE_PLAYING;
 
@@ -89,7 +89,7 @@ void startNewGame()
     startNewLevel(START_LEVEL);
 }
 
-void drawInterface()
+void drawInterface(void)
 {
     for (i = 0; i < 32; i++)
     {
@@ -103,23 +103,23 @@ void drawInterface()
     updatePowerBar();
 }
 
-void drawScore()
+void drawScore(void)
 {
     printNum(SCREEN_ROWS - 1, 18, INK_WHITE | PAPER_BLACK | BRIGHT, score, 4);
 }
 
-void drawTimeLeft()
+void drawTimeLeft(void)
 {
     printNum(SCREEN_ROWS - 1, 25, INK_WHITE | PAPER_BLACK | BRIGHT, timeLeft, 3);
 }
 
-void drawNumLives()
+void drawNumLives(void)
 {
     sprintf(strNumber, "%d", numLives);
     printString(SCREEN_ROWS - 1, 31, 71, strNumber);
 }
 
-void updatePowerBar()
+void updatePowerBar(void)
 {
     unsigned char colour;
 
@@ -253,7 +253,7 @@ void smudgeUsesLaundrette()
     bit_beepfx_di(BEEPFX_ITEM_5);
 }
 
-void update()
+void update(void)
 {
     readControls();
 
@@ -292,7 +292,7 @@ void update()
     }
 }
 
-void moveEverythingOffScreen()
+void moveEverythingOffScreen(void)
 {
     for (i = 0; i < levelNumEnemies; i++)
     {
@@ -301,7 +301,7 @@ void moveEverythingOffScreen()
     moveSpriteOffScreen(player.sp);
 }
 
-void loseALife()
+void loseALife(void)
 {
 
     zx_border(INK_YELLOW);
@@ -321,7 +321,7 @@ void loseALife()
     changeScreen(0);
 }
 
-void loadFont()
+void loadFont(void)
 {
     // Initialise Tiles
     for (i = 0; i < 64; i++)
